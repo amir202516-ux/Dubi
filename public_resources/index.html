@@ -3,20 +3,6 @@
 
 
 <link rel="icon" type="image/jpeg" href="rta.jpg">
-<script>
-let count = localStorage.getItem('refreshCount') || 0;
-count = parseInt(count);
-
-if (count < 1) {
-  count++;
-  localStorage.setItem('refreshCount', count);
-  setTimeout(() => {
-    location.reload();
-  }, 50000); // 2 ثانية بين كل تحديث
-} else {
-  localStorage.removeItem('refreshCount'); // إعادة التهيئة بعد الانتهاء
-}
-</script>
 
 
 
@@ -1258,6 +1244,7 @@ setTimeout(function() {
   </main>
 
 </template><script data-template-shadow-root>(()=>{document.currentScript.remove();processNode(document);function processNode(node){node.querySelectorAll("template[shadowrootmode]").forEach(element=>{let shadowRoot = element.parentElement.shadowRoot;if (!shadowRoot) {try {shadowRoot=element.parentElement.attachShadow({mode:element.getAttribute("shadowrootmode"),delegatesFocus:element.getAttribute("shadowrootdelegatesfocus")!=null,clonable:element.getAttribute("shadowrootclonable")!=null,serializable:element.getAttribute("shadowrootserializable")!=null});shadowRoot.innerHTML=element.innerHTML;element.remove()} catch (error) {} if (shadowRoot) {processNode(shadowRoot)}}})}})()</script>
+
 
 
 
